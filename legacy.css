@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-/* FF 3.6.8 und Opera 10.60 behandeln die Elemente sonst als inline --Simon (09/08/2010I) */
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { 
-	display:block;
-}
-
-
-/* FIXME: WebKit kann die CSS-Eigenschaft quotes nicht. */
