@@ -21,10 +21,9 @@
 						<li><a href="http://yp-international.net" class="link">YPI</a></li>
 					</ul>
 				</div>
-				<form action="#" id="search-form" method="GET">
-					<input name="search" type="search" id="search-form-field"/>
-					<input type="submit" id="search-form-button" value=" → "/>
-					<!-- !html5 -->
+				<form action="#" id="search-form" method="get">
+					<p><input name="search" type="text" id="search-form-field"/></p>
+					<p><input type="submit" id="search-form-button" value=" → "/></p>
 				</form>
 			</div>
 			<div id="body">
@@ -87,7 +86,7 @@
 						<h2>Kommentare</h2>
 						<p id="comments-spam-show" class="comments-spam-link">Einige Kommentare wurden als Spam markiert. Um sie trotzdem zu sehen klicke <a href="#comments" id="comments-spam-show-link">hier</a>.</p>
 						<p id="comments-spam-hide" class="comments-spam-link">Um die als Spam markierten Kommentare wieder auszublenden klicke <a href="#comments" id="comments-spam-hide-link">hier</a>.</p>
-						<script>
+						<script type="text/javascript">
 							$("#comments-spam-show-link").click(function () {
 								$(".comment-spam").show();
 								$("#comments-spam-show").hide();
@@ -160,27 +159,27 @@
 						<hr />
 						<div id="comment-form">
 							<h3>Kommentar abgeben</h3>
-							<form method="POST" action="#">
+							<form method="post" action="#">
 								<p id="comment-form-name">
-									<label for="name">Name: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
-									<input type="text" name="name" size="40"/>
+									<label for="comment-form-name-input">Name: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
+									<input type="text" name="name" id="comment-form-name-input" size="40"/>
 								</p>
 								<p id="comment-form-email">
-									<label for="email">E-mail-Adresse: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
-									<input type="email" name="email" size="40"/>
-									<p class="comment-form-advice">(Wird nicht veröffentlicht)</p>
+									<label for="comment-form-email-input">E-mail-Adresse: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
+									<input type="text" name="email" id="comment-form-email-input" size="40"/>
+									<span class="comment-form-advice">(Wird nicht veröffentlicht)</span>
 								</p>
 								<p id="comment-form-url">
-									<label for="url">Webseite: </label>
-									<input type="url" name="website" size="40"/>
+									<label for="comment-form-url-input">Webseite: </label>
+									<input type="text" name="website" id="comment-form-url-input" size="40"/>
 								</p>
 								<p id="comment-form-subject">
-									<label for="subject">Betreff: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
-									<input type="text" name="subject" size="40" />
+									<label for="comment-form-subject-input">Betreff: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
+									<input type="text" name="subject" id="comment-form-subject-input" size="40" />
 								</p>
 								<p id="comment-form-content">
-									<label for="comment">Dein Kommentar: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
-									<textarea name="comment" rows="15" cols="60"></textarea>
+									<label for="comment-form-comment-textarea">Dein Kommentar: <span class="comment-form-required" title="Pflichtfeld">*</span></label>
+									<textarea name="comment" id="comment-form-comment-textarea" rows="15" cols="60"></textarea>
 								</p>
 								<p id="comment-form-captcha">
 								Irgendein Captcha hier…
